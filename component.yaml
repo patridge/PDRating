@@ -2,8 +2,8 @@ version: 1.0.0
 name: PDReview
 id: pdreview
 publisher: Adam Patridge
-publisher-url: http://www.patridgedev.com/
-summary: Display and collect ratings for things in your app.
+publisher-url: https://github.com/patridge/PDRating
+summary: PDRatingView lets you display an average rating and, optionally, collect a user's rating submission on items in your application.
 libraries:
   ios: PDRating/bin/Release/PDRating.dll
 samples:
