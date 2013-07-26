@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhone.Build.0 = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PDRating\PDRating.csproj
+		version = 1.0
+	EndGlobalSection
+EndGlobal
