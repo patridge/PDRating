@@ -10,19 +10,19 @@ PDRatingView lets you display an average rating and, optionally, collect a user'
 
 You can use whatever images you want and whatever scale size you need. Many people use five stars.
 
-![Five star rating scale](/screenshots/five-stars-scale.png)
+![Five star rating scale](https://raw.github.com/patridge/PDRating/master/component/Screenshots/five-stars-scale.png)
 
 Others have something else entirely. Perhaps you want a 10-tomato rating.
 
-![Ten tomato rating scale](/screenshots/ten-tomatoes-scale.png)
+![Ten tomato rating scale](https://raw.github.com/patridge/PDRating/master/component/Screenshots/ten-tomatoes-scale.png)
 
 Whatever you need, you give it a rectangle to it into and it will resize things accordingly.
 
-![Six moustaches rating scale](/screenshots/six-moustaches-scale.png)
+![Six moustaches rating scale](https://raw.github.com/patridge/PDRating/master/component/Screenshots/six-moustaches-scale.png)
 
 Ratings displays are kept minimal. If you need to compose your ratings view into something else, it will overlay it just fine.
 
-![Star rating on a custom background](/screenshots/custom-background.png)
+![Star rating on a custom background](https://raw.github.com/patridge/PDRating/master/component/Screenshots/custom-background.png)
 
 ##Usage
 
