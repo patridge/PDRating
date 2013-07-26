@@ -16,7 +16,7 @@ Others have something else entirely. Perhaps you want a 10-tomato rating.
 
 ![Ten tomato rating scale](https://raw.github.com/patridge/PDRating/master/component/Screenshots/ten-tomatoes-scale.png)
 
-Whatever you need, you give it a rectangle to it into and it will resize things accordingly.
+Whatever you need, you give it a rectangle to fit into and it will resize things accordingly.
 
 ![Six moustaches rating scale](https://raw.github.com/patridge/PDRating/master/component/Screenshots/six-moustaches-scale.png)
 
