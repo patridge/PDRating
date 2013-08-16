@@ -26,7 +26,7 @@ namespace PDRatingSample {
             // [Optional] Put a little space between the rating items.
             ratingConfig.ItemPadding = 5f;
             backgroundButton = UIButton.FromType(UIButtonType.RoundedRect);
-            backgroundButton.SetBackgroundImage(UIImage.FromBundle("background/background").StretchableImage(0, 0), UIControlState.Normal);
+            backgroundButton.SetBackgroundImage(UIImage.FromBundle("Background/background").StretchableImage(0, 0), UIControlState.Normal);
             backgroundButton.Frame = new RectangleF(new PointF(24f, 24f), new SizeF(View.Bounds.Width - (2f * 24f), 125f));
 
             var ratingFrame = backgroundButton.Bounds;
