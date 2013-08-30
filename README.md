@@ -1,5 +1,7 @@
 #PDRating
 
+*Now [available through Xamarin Components](http://components.xamarin.com/view/pdreview/).*
+
 PDRatingView lets you display an average rating and, optionally, collect a user's rating submission on items in your Xamarin.iOS application.
 
 * Custom rating images.
