@@ -30,4 +30,46 @@ Global
 		StartupItem = PDRating\PDRating.csproj
 		version = 1.0
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SierraTradingPost.iOS\SierraTradingPost.iOS.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/plain
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.StandardHeader = $3
+		$3.Text = 
+		$3.IncludeInNewFiles = True
+		$0.CSharpFormattingPolicy = $4
+		$4.IndentSwitchBody = True
+		$4.NamespaceBraceStyle = EndOfLine
+		$4.ClassBraceStyle = EndOfLine
+		$4.InterfaceBraceStyle = EndOfLine
+		$4.StructBraceStyle = EndOfLine
+		$4.EnumBraceStyle = EndOfLine
+		$4.MethodBraceStyle = EndOfLine
+		$4.ConstructorBraceStyle = EndOfLine
+		$4.DestructorBraceStyle = EndOfLine
+		$4.ElseNewLinePlacement = NewLine
+		$4.ElseIfNewLinePlacement = DoNotCare
+		$4.CatchNewLinePlacement = NewLine
+		$4.FinallyNewLinePlacement = NewLine
+		$4.BeforeMethodDeclarationParentheses = False
+		$4.BeforeMethodCallParentheses = False
+		$4.BeforeConstructorDeclarationParentheses = False
+		$4.BeforeIndexerDeclarationBracket = False
+		$4.BeforeDelegateDeclarationParentheses = False
+		$4.AfterDelegateDeclarationParameterComma = True
+		$4.NewParentheses = False
+		$4.SpacesBeforeBrackets = False
+		$4.BlankLinesBetweenTypes = 0
+		$4.BlankLinesBetweenMembers = 0
+		$4.inheritsSet = Mono
+		$4.inheritsScope = text/x-csharp
+		$4.scope = text/x-csharp
+	EndGlobalSection
 EndGlobal
