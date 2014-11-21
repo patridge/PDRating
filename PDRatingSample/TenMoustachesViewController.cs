@@ -1,8 +1,8 @@
 using System;
 using System.Drawing;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
 using PDRatingSample;
+using UIKit;
+using CoreGraphics;
 
 namespace PDRatingSample {
     public class TenTomatoesViewController : UIViewController {
@@ -25,7 +25,7 @@ namespace PDRatingSample {
             ratingConfig.ScaleSize = 10;
             // [Optional] Put a little space between the rating items.
             ratingConfig.ItemPadding = 5f;
-            var ratingFrame = new RectangleF(PointF.Empty, new SizeF(View.Bounds.Width, 125f));;
+            var ratingFrame = new CGRect(CGPoint.Empty, new CGSize(View.Bounds.Width, 125f));;
 
             ratingView = new PDRatingView(ratingFrame, ratingConfig);
 

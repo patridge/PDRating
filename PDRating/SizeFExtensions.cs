@@ -1,16 +1,25 @@
 using System;
-using System.Drawing;
+using CoreGraphics;
+
+#if !__UNIFIED__
+using CGRect = global::System.Drawing.RectangleF;
+using CGSize = global::System.Drawing.SizeF;
+using CGPoint = global::System.Drawing.PointF;
+using nfloat = global::System.Single;
+using nint = global::System.Int32;
+using nuint = global::System.UInt32;
+#endif
 
 namespace PDRatingSample {
     public static class SizeFExtensions {
-        public static SizeF ScaleProportional(this SizeF original, float maxWidth, float maxHeight) {
-            float ratioX = (float)maxWidth / original.Width;
-            float ratioY = (float)maxHeight / original.Height;
-            float ratio = Math.Min(ratioX, ratioY);
+        public static CGSize ScaleProportional(this CGSize original, nfloat maxWidth, nfloat maxHeight) {
+            nfloat ratioX = (float)maxWidth / original.Width;
+            nfloat ratioY = (float)maxHeight / original.Height;
+            nfloat ratio = (nfloat)Math.Min(ratioX, ratioY);
 
-            float newWidth = (float)(original.Width * ratio);
-            float newHeight = (float)(original.Height * ratio);
-            return new SizeF(newWidth, newHeight);
+            nfloat newWidth = (nfloat)(original.Width * ratio);
+            nfloat newHeight = (nfloat)(original.Height * ratio);
+            return new CGSize(newWidth, newHeight);
         }
     }
 }

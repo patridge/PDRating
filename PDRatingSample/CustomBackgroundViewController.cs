@@ -1,8 +1,6 @@
-using System;
-using System.Drawing;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
 using PDRatingSample;
+using UIKit;
+using CoreGraphics;
 
 namespace PDRatingSample {
     public class CustomBackgroundViewController : UIViewController {
@@ -12,7 +10,7 @@ namespace PDRatingSample {
 
         public CustomBackgroundViewController() {
             Title = ratingStyle;
-            TabBarItem.Image = UIImage.FromBundle("Stars/filled").Scale(new SizeF(30f, 30f));
+            TabBarItem.Image = UIImage.FromBundle("Stars/filled").Scale(new CGSize(30f, 30f));
         }
 
         public override void ViewDidLoad() {
@@ -27,7 +25,7 @@ namespace PDRatingSample {
             ratingConfig.ItemPadding = 5f;
             backgroundButton = UIButton.FromType(UIButtonType.RoundedRect);
             backgroundButton.SetBackgroundImage(UIImage.FromBundle("Background/background").StretchableImage(0, 0), UIControlState.Normal);
-            backgroundButton.Frame = new RectangleF(new PointF(24f, 24f), new SizeF(View.Bounds.Width - (2f * 24f), 125f));
+            backgroundButton.Frame = new CGRect(new CGPoint(24f, 24f), new CGSize(View.Bounds.Width - (2f * 24f), 125f));
 
             var ratingFrame = backgroundButton.Bounds;
 

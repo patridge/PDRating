@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using UIKit;
+using Foundation;
 
 namespace PDRatingSample {
     public class Application {
         static void Main(string[] args) {
-            UIApplication.Main(args, null, "AppDelegate");
+			UIApplication.Main(args, null, "AppDelegate");
         }
     }
-    [Register ("AppDelegate")]
+	[Register("AppDelegate")]
     public partial class AppDelegate : UIApplicationDelegate {
         UIWindow window;
         UITabBarController tabBarController;

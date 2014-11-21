@@ -1,9 +1,9 @@
 using System;
-using MonoTouch.UIKit;
 using System.Linq;
-using MonoTouch.CoreGraphics;
 using System.Drawing;
 using System.Collections.Generic;
+using UIKit;
+using CoreGraphics;
 
 namespace PDRatingSample {
     public class RatingConfig {
@@ -86,11 +86,11 @@ namespace PDRatingSample {
             base.LayoutSubviews();
 
             // Layout everything to their appropriate sizes.
-            SelectedImageView.Frame = new RectangleF(PointF.Empty, Bounds.Size);
-            EmptyImageView.Frame = new RectangleF(PointF.Empty, Bounds.Size);
-            FilledImageViewObscuringWrapper.Frame = new RectangleF(PointF.Empty, Bounds.Size);
-            FilledImageViewSizingHolder.Frame = new RectangleF(PointF.Empty, FilledImageViewObscuringWrapper.Bounds.Size);
-            FilledImageView.Frame = new RectangleF(PointF.Empty, FilledImageViewSizingHolder.Bounds.Size);
+            SelectedImageView.Frame = new CGRect(CGPoint.Empty, Bounds.Size);
+            EmptyImageView.Frame = new CGRect(CGPoint.Empty, Bounds.Size);
+            FilledImageViewObscuringWrapper.Frame = new CGRect(CGPoint.Empty, Bounds.Size);
+            FilledImageViewSizingHolder.Frame = new CGRect(CGPoint.Empty, FilledImageViewObscuringWrapper.Bounds.Size);
+            FilledImageView.Frame = new CGRect(CGPoint.Empty, FilledImageViewSizingHolder.Bounds.Size);
 
             // Hide/Show things accordingly.
             if (Chosen) {
@@ -107,14 +107,14 @@ namespace PDRatingSample {
                     FilledImageView.SetAspectFitAsNeeded(UIViewContentMode.Center);
                     if (PercentFilled < 1f) {
                         // Obscure a portion of the filled image based on the percent.
-                        float revealWidth;
+                        nfloat revealWidth;
                         if (FilledImageView.Image.Size.Width < FilledImageView.Bounds.Width) {
                             revealWidth = ((FilledImageView.Bounds.Width - FilledImageView.Image.Size.Width) / 2f) + (FilledImageView.Image.Size.Width * PercentFilled);
                         }
                         else {
                             revealWidth = FilledImageView.Bounds.Width * PercentFilled;
                         }
-                        FilledImageViewObscuringWrapper.Frame = new RectangleF(FilledImageViewSizingHolder.Frame.Location, new SizeF(revealWidth, FilledImageViewSizingHolder.Frame.Height));
+                        FilledImageViewObscuringWrapper.Frame = new CGRect(FilledImageViewSizingHolder.Frame.Location, new CGSize(revealWidth, FilledImageViewSizingHolder.Frame.Height));
                     }
                     FilledImageViewObscuringWrapper.Hidden = false;
                 }
@@ -156,8 +156,9 @@ namespace PDRatingSample {
             }
         }
         List<RatingItemView> StarViews;
-        public PDRatingView(RectangleF frame, RatingConfig config) : this(frame, config, 0m) { }
-        public PDRatingView(RectangleF frame, RatingConfig config, decimal averageRating) : this(config, averageRating) {
+        public PDRatingView(CGRect frame, RatingConfig config) : this(frame, config, 0m) {
+        }
+        public PDRatingView(CGRect frame, RatingConfig config, decimal averageRating) : this(config, averageRating) {
             Frame = frame;
         }
         public PDRatingView(RatingConfig config, decimal averageRating) : this(config) {
@@ -170,8 +171,8 @@ namespace PDRatingSample {
             Enumerable.Range(0, StarRatingConfig.ScaleSize).ToList().ForEach(i => {
                 int starRating = i + 1;
                 RatingItemView starView = new RatingItemView(emptyImage: StarRatingConfig.EmptyImage,
-                                                 filledImage: StarRatingConfig.FilledImage,
-                                                 chosenImage: StarRatingConfig.ChosenImage);
+                                              filledImage: StarRatingConfig.FilledImage,
+                                              chosenImage: StarRatingConfig.ChosenImage);
                 StarViews.Add(starView);
                 EventHandler handler = (s, e) => {
                     ChosenRating = starRating;
@@ -183,16 +184,16 @@ namespace PDRatingSample {
             AssignHandlers();
         }
         public override void LayoutSubviews() {
-            float starAreaWidth = Bounds.Width / StarRatingConfig.ScaleSize;
-            float starAreaHeight = Bounds.Height - (2 * StarRatingConfig.ItemPadding);
-            float starImageMaxWidth = starAreaWidth - (2 * StarRatingConfig.ItemPadding);
-            float starImageMaxHeight = starAreaHeight - (2 * StarRatingConfig.ItemPadding);
-            SizeF starAreaScaled = StarRatingConfig.EmptyImage.Size.ScaleProportional(starImageMaxWidth, starImageMaxHeight);
-            float top = (Bounds.Height / 2f) - (starAreaScaled.Height / 2f);
+            nfloat starAreaWidth = Bounds.Width / StarRatingConfig.ScaleSize;
+            nfloat starAreaHeight = Bounds.Height - (2 * StarRatingConfig.ItemPadding);
+            nfloat starImageMaxWidth = starAreaWidth - (2 * StarRatingConfig.ItemPadding);
+            nfloat starImageMaxHeight = starAreaHeight - (2 * StarRatingConfig.ItemPadding);
+            CGSize starAreaScaled = StarRatingConfig.EmptyImage.Size.ScaleProportional(starImageMaxWidth, starImageMaxHeight);
+            nfloat top = (Bounds.Height / 2f) - (starAreaScaled.Height / 2f);
             int i = 0;
             StarViews.ForEach(v => {
-                float x = (i * starAreaWidth) + StarRatingConfig.ItemPadding;
-                v.Frame = new RectangleF(new PointF(x, top), starAreaScaled);
+                nfloat x = (i * starAreaWidth) + StarRatingConfig.ItemPadding;
+                v.Frame = new CGRect(new CGPoint(x, top), starAreaScaled);
 
                 // Choose between showing a chosen rating and the average rating.
                 if (ChosenRating != null) {

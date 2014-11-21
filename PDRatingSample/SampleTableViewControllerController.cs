@@ -1,7 +1,8 @@
 using System;
 using System.Drawing;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using UIKit;
+using Foundation;
+using CoreGraphics;
 
 namespace PDRatingSample {
     public class SampleTableViewControllerController : UITableViewController {
@@ -22,11 +23,11 @@ namespace PDRatingSample {
             RowCount = rowCount;
         }
 
-        public override int NumberOfSections(UITableView tableView) {
+        public override nint NumberOfSections(UITableView tableView) {
             return 1;
         }
 
-        public override int RowsInSection(UITableView tableview, int section) {
+        public override nint RowsInSection(UITableView tableview, nint section) {
             return RowCount;
         }
 
@@ -61,7 +62,7 @@ namespace PDRatingSample {
             var ratingConfig = new RatingConfig(emptyImage: UIImage.FromBundle("Stars/empty"),
                                                 filledImage: UIImage.FromBundle("Stars/filled"),
                                                 chosenImage: UIImage.FromBundle("Stars/chosen"));
-            ratingView = new PDRatingView(new RectangleF(PointF.Empty, ContentView.Bounds.Size), ratingConfig);
+            ratingView = new PDRatingView(new CGRect(CGPoint.Empty, ContentView.Bounds.Size), ratingConfig);
             ratingView.UserInteractionEnabled = false;
 
             ContentView.Add(ratingView);

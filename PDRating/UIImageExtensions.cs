@@ -1,7 +1,4 @@
-using System;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace PDRatingSample {
     public static class UIImageExtensions {
