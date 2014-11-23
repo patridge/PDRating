@@ -2,13 +2,13 @@ require "rake/clean"
 
 CLEAN.include "*.xam"
 CLEAN.include "xpkg"
-CLEAN.include "PDRating.iOS.dll"
-CLEAN.include "PDRating/bin"
-CLEAN.include "PDRating/obj"
-CLEAN.include "PDRatingSample/bin"
-CLEAN.include "PDRatingSample/obj"
+CLEAN.include "src/PDRating/bin"
+CLEAN.include "src/PDRating/obj"
+CLEAN.include "samples/PDRatingSample/bin"
+CLEAN.include "samples/PDRatingSample/obj"
 
-COMPONENT = "pdreview-1.0.0.xam"
+VERSION = "2.0.0"
+COMPONENT = "pdreview-#{VERSION}.xam"
 MONOXBUILD = "/Library/Frameworks/Mono.framework/Commands/xbuild"
 
 file "xpkg/xamarin-component.exe" do

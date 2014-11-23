@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "src\PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRatingSample", "PDRatingSample\PDRatingSample.csproj", "{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating-Classic", "src\PDRating\PDRating-Classic.csproj", "{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "..\src\PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRatingSample-Classic", "PDRatingSample\PDRatingSample-Classic.csproj", "{E27FB641-24FC-40EB-BAB3-BD00321C4B83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating-Classic", "..\src\PDRating\PDRating-Classic.csproj", "{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,18 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Debug|iPhone.Build.0 = Debug|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Release|iPhone.Build.0 = Release|iPhone
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.ActiveCfg = Release|Any CPU
@@ -39,9 +55,11 @@ Global
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Release|iPhone.Build.0 = Release|Any CPU
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E27FB641-24FC-40EB-BAB3-BD00321C4B83}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E27FB641-24FC-40EB-BAB3-BD00321C4B83}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = src\PDRating\PDRating.csproj
+		StartupItem = PDRatingSample\PDRatingSample.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.FileWidth = 120
@@ -81,6 +99,5 @@ Global
 		$4.inheritsSet = Mono
 		$4.inheritsScope = text/x-csharp
 		$4.scope = text/x-csharp
-		version = 1.0
 	EndGlobalSection
 EndGlobal

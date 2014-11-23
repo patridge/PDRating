@@ -1,10 +1,27 @@
-version: 1.0.1
+version: 2.0.0
 name: PDReview
 id: pdreview
 publisher: Adam Patridge
-publisher-url: https://github.com/patridge/PDRating
+license: component/License.md
+details: component/Details.md
+getting-started: component/GettingStarted.md
 summary: PDRatingView lets you display an average rating and, optionally, collect a user's rating submission on items in your application.
+icons:
+  - component/icons/pdrating_128x128.png
+  - component/icons/pdrating_512x512.png
+publisher-url: https://github.com/patridge/PDRating
+build:
+  - PDRating.sln
 libraries:
-  ios: PDRating/bin/Release/PDRating.dll
+  ios: src/PDRating/bin/Release/PDRating.dll
+screenshots:
+  - component/Screenshots/PDRating.mov
+  - component/Screenshots/five-stars-scale.png
+  - component/Screenshots/six-moustaches-scale.png
+  - component/Screenshots/ten-tomatoes-scale.png
+  - component/Screenshots/custom-background.png
 samples:
-  "iOS Sample. See a PDRating in action on iOS with a variety of samples." : "PDRatingSample.sln"
+  - name: "iOS Sample"
+    path: samples/PDRatingSample.sln
+    configuration: "Release|iPhone"
+    nobuild: true
