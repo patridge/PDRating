@@ -13,7 +13,8 @@ publisher-url: https://github.com/patridge/PDRating
 build:
   - PDRating.sln
 libraries:
-  ios: src/PDRating/bin/Release/PDRating.dll
+  ios: src/PDRating/bin/classic/Release/PDRating.dll
+  ios-unified: src/PDRating/bin/unified/Release/PDRating.dll
 screenshots:
   - component/Screenshots/PDRating.mov
   - component/Screenshots/five-stars-scale.png
