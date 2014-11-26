@@ -86,6 +86,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="PDRating">
+      <HintPath>..\lib\classic\PDRating.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -125,11 +128,5 @@
     <Folder Include="Resources\Moustaches\" />
     <Folder Include="Resources\Stars\" />
     <Folder Include="Resources\Tomatoes\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\PDRating\PDRating-Classic.csproj">
-      <Project>{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}</Project>
-      <Name>PDRating-Classic</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

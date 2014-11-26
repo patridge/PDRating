@@ -2,8 +2,6 @@ require "rake/clean"
 
 CLEAN.include "*.xam"
 CLEAN.include "xpkg"
-CLEAN.include "src/PDRating/bin"
-CLEAN.include "src/PDRating/obj"
 CLEAN.include "samples/PDRatingSample/bin"
 CLEAN.include "samples/PDRatingSample/obj"
 

@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRatingSample", "PDRatingSample\PDRatingSample.csproj", "{2737BE32-ABCE-4F67-95A6-CF28DF3BE6FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "..\src\PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRatingSample-Classic", "PDRatingSample\PDRatingSample-Classic.csproj", "{E27FB641-24FC-40EB-BAB3-BD00321C4B83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating-Classic", "..\src\PDRating\PDRating-Classic.csproj", "{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
