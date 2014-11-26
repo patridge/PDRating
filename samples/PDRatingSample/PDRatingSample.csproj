@@ -91,9 +91,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="PDRating">
-      <HintPath>..\lib\unified\PDRating.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -133,4 +130,10 @@
     <Folder Include="Resources\Tomatoes\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\PDRating\PDRating.csproj">
+      <Project>{62A0793B-8086-4424-84E2-9743845676C9}</Project>
+      <Name>PDRating</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

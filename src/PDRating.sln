@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "src\PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating", "PDRating\PDRating.csproj", "{62A0793B-8086-4424-84E2-9743845676C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating-Classic", "src\PDRating\PDRating-Classic.csproj", "{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDRating-Classic", "PDRating\PDRating-Classic.csproj", "{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{62A0793B-8086-4424-84E2-9743845676C9}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
@@ -27,10 +27,10 @@ Global
 		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhone.Build.0 = Release|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{62A0793B-8086-4424-84E2-9743845676C9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
@@ -41,7 +41,7 @@ Global
 		{AC4D8073-00A5-42EB-820A-5BE0DFB6E5BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = src\PDRating\PDRating.csproj
+		StartupItem = PDRating\PDRating.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.FileWidth = 120
