@@ -11,12 +11,11 @@ icons:
   - component/icons/pdrating_512x512.png
 publisher-url: https://github.com/patridge/PDRating
 build:
-  - PDRating.sln
+  - src/PDRating.sln
 libraries:
   ios: src/PDRating/bin/classic/Release/PDRating.dll
   ios-unified: src/PDRating/bin/unified/Release/PDRating.dll
 screenshots:
-  - component/Screenshots/PDRating.mov
   - component/Screenshots/five-stars-scale.png
   - component/Screenshots/six-moustaches-scale.png
   - component/Screenshots/ten-tomatoes-scale.png
@@ -24,5 +23,9 @@ screenshots:
 samples:
   - name: "iOS Sample"
     path: samples/PDRatingSample.sln
+    configuration: "Release|iPhone"
+    nobuild: true
+  - name: "iOS Classic Sample"
+    path: samples/PDRatingSample-Classic.sln
     configuration: "Release|iPhone"
     nobuild: true
