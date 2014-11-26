@@ -13,13 +13,13 @@
     <AssemblyName>PDRatingSample</AssemblyName>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\unified\iPhoneSimulator\Debug</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,7 +34,6 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\unified\iPhoneSimulator\Release</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -45,7 +44,6 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\unified\iPhone\Debug</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -62,7 +60,6 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\unified\iPhone\Release</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -72,7 +69,6 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <BuildIpa>true</BuildIpa>
@@ -84,7 +80,6 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\unified\iPhone\AppStore</OutputPath>
-    <IntermediateOutputPath>obj\unified\$(Platform)\$(Configuration)</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Distribution</CodesignKey>
