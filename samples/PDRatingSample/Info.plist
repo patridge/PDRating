@@ -12,7 +12,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>5.0</string>
+	<string>5.2</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -22,7 +22,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>PDRating Sample</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-72@2x</string>
