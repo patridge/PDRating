@@ -8,7 +8,7 @@
     <ProjectGuid>{62A0793B-8086-4424-84E2-9743845676C9}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>PDRating</RootNamespace>
+    <RootNamespace>PatridgeDev</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>PDRating</AssemblyName>
     <Description>Display and collect ratings for things in your app.</Description>

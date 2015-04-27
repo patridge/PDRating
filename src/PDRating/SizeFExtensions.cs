@@ -18,7 +18,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace PDRatingSample {
+namespace PatridgeDev {
     public static class SizeFExtensions {
         public static CGSize ScaleProportional(this CGSize original, nfloat maxWidth, nfloat maxHeight) {
             nfloat ratioX = (float)maxWidth / original.Width;
