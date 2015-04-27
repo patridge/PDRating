@@ -20,7 +20,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace PDRatingSample {
+namespace PatridgeDev {
     public class RatingConfig {
         public UIImage EmptyImage { get; set; }
         /// <summary>

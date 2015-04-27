@@ -29,7 +29,7 @@ Ratings displays are kept minimal. If you need to compose your ratings view into
 Need some space between your rating items? Just set the `ItemPadding` in the `RatingConfig` object used to build the `PDRatingView`.
 
     // Put a little space between the rating items.
-    ratingView.ItemPadding = 5f;
+    ratingConfig.ItemPadding = 5f;
 
 ###Read-only (no user rating input)
 
@@ -52,4 +52,4 @@ If you want average ratings to display in half- or whole-star increments, that i
     decimal rating = 3.58m;
     decimal halfRoundedRating = Math.Round(rating * 2m, MidpointRounding.AwayFromZero) / 2m;
     decimal wholeRoundedRating = Math.Round(rating, MidpointRounding.AwayFromZero);
-    StarRating.AverageRating = wholeRoundedRating;
+    StarRating.AverageRating = wholeRoundedRating;

@@ -16,7 +16,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace PDRatingSample {
+namespace PatridgeDev {
     public static class UIImageExtensions {
         /// <summary>
         /// Resizes the image proportionally when it is larger than the parent UIImageView. If it is smaller, the fallback content mode is used.

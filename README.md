@@ -63,7 +63,7 @@ In any `UIView` or `UIViewController`, you add a `PDRatingView` to the displayed
 Need some space between your rating items? Just set the `ItemPadding` in the `RatingConfig` object used to build the `PDRatingView`.
 
     // Put a little space between the rating items.
-    ratingView.ItemPadding = 5f;
+    ratingConfig.ItemPadding = 5f;
 
 ###Read-only (no user rating input)
 
