@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>Xamarin.iOS10</TargetFrameworks>
+    <TargetFramework>Xamarin.iOS10</TargetFramework>
     <AssemblyName>PDRating</AssemblyName>
     <RootNamespace>PatridgeDev</RootNamespace>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
